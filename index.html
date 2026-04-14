@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lejlighed - Billeder</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: #f5f5f5;
+      color: #333;
+    }
+
+    header {
+      background: #fff;
+      padding: 2rem 1rem;
+      text-align: center;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    header h1 {
+      font-size: 1.8rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+
+    nav {
+      display: flex;
+      gap: 0.5rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      text-decoration: none;
+      padding: 0.5rem 1.2rem;
+      border-radius: 2rem;
+      background: #e8e8e8;
+      color: #333;
+      font-size: 0.9rem;
+      font-weight: 500;
+      transition: background 0.2s, color 0.2s;
+    }
+
+    nav a:hover, nav a.active {
+      background: #333;
+      color: #fff;
+    }
+
+    main {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+    }
+
+    .section {
+      margin-bottom: 3rem;
+    }
+
+    .section h2 {
+      font-size: 1.4rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid #ddd;
+      text-transform: capitalize;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 1rem;
+    }
+
+    .gallery a {
+      display: block;
+      position: relative;
+      overflow: hidden;
+      border-radius: 8px;
+      aspect-ratio: 4/3;
+      background: #ddd;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+      display: block;
+    }
+
+    .gallery a:hover img {
+      transform: scale(1.05);
+    }
+
+    .gallery .label {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 0.5rem 0.75rem;
+      background: linear-gradient(transparent, rgba(0,0,0,0.6));
+      color: #fff;
+      font-size: 0.85rem;
+      font-weight: 500;
+    }
+
+    @media (max-width: 600px) {
+      header h1 { font-size: 1.3rem; }
+      .gallery {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 0.5rem;
+      }
+      .gallery a { border-radius: 4px; }
+      .gallery .label { font-size: 0.75rem; padding: 0.3rem 0.5rem; }
+      main { padding: 1rem 0.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Lejlighed - Billeder</h1>
+  <nav>
+    <a href="#koekken" class="active">Kokken</a>
+    <a href="#faellesarealer">Faellesarealer</a>
+    <a href="#vaerelser">Vaerelser</a>
+    <a href="#gul-gang">Gul gang</a>
+    <a href="#lager">Lager</a>
+  </nav>
+</header>
+
+<main>
+
+  <section class="section" id="koekken">
+    <h2>Kokken</h2>
+    <div class="gallery">
+      <a href="k%C3%B8kken/IMG_0961.jpeg" class="glightbox" data-gallery="koekken" data-title="Kokken 1">
+        <img src="k%C3%B8kken/IMG_0961.jpeg" alt="Kokken 1" loading="lazy">
+        <span class="label">Kokken 1</span>
+      </a>
+      <a href="k%C3%B8kken/IMG_0962.jpeg" class="glightbox" data-gallery="koekken" data-title="Kokken 2">
+        <img src="k%C3%B8kken/IMG_0962.jpeg" alt="Kokken 2" loading="lazy">
+        <span class="label">Kokken 2</span>
+      </a>
+      <a href="k%C3%B8kken/IMG_0963.jpeg" class="glightbox" data-gallery="koekken" data-title="Kokken 3">
+        <img src="k%C3%B8kken/IMG_0963.jpeg" alt="Kokken 3" loading="lazy">
+        <span class="label">Kokken 3</span>
+      </a>
+      <a href="k%C3%B8kken/IMG_0965.jpeg" class="glightbox" data-gallery="koekken" data-title="Kokken 4">
+        <img src="k%C3%B8kken/IMG_0965.jpeg" alt="Kokken 4" loading="lazy">
+        <span class="label">Kokken 4</span>
+      </a>
+      <a href="k%C3%B8kken/IMG_0966.jpeg" class="glightbox" data-gallery="koekken" data-title="Kokken 5">
+        <img src="k%C3%B8kken/IMG_0966.jpeg" alt="Kokken 5" loading="lazy">
+        <span class="label">Kokken 5</span>
+      </a>
+      <a href="k%C3%B8kken/IMG_0967.jpeg" class="glightbox" data-gallery="koekken" data-title="Kokken 6">
+        <img src="k%C3%B8kken/IMG_0967.jpeg" alt="Kokken 6" loading="lazy">
+        <span class="label">Kokken 6</span>
+      </a>
+      <a href="k%C3%B8kken/IMG_0968.jpeg" class="glightbox" data-gallery="koekken" data-title="Kokken 7">
+        <img src="k%C3%B8kken/IMG_0968.jpeg" alt="Kokken 7" loading="lazy">
+        <span class="label">Kokken 7</span>
+      </a>
+    </div>
+  </section>
+
+  <section class="section" id="faellesarealer">
+    <h2>Faellesarealer</h2>
+    <div class="gallery">
+      <a href="f%C3%A6llesarealer/IMG_0921.jpeg" class="glightbox" data-gallery="faellesarealer" data-title="Faellesarealer 1">
+        <img src="f%C3%A6llesarealer/IMG_0921.jpeg" alt="Faellesarealer 1" loading="lazy">
+        <span class="label">Faellesarealer 1</span>
+      </a>
+      <a href="f%C3%A6llesarealer/IMG_0922.jpeg" class="glightbox" data-gallery="faellesarealer" data-title="Faellesarealer 2">
+        <img src="f%C3%A6llesarealer/IMG_0922.jpeg" alt="Faellesarealer 2" loading="lazy">
+        <span class="label">Faellesarealer 2</span>
+      </a>
+      <a href="f%C3%A6llesarealer/IMG_0923.jpeg" class="glightbox" data-gallery="faellesarealer" data-title="Faellesarealer 3">
+        <img src="f%C3%A6llesarealer/IMG_0923.jpeg" alt="Faellesarealer 3" loading="lazy">
+        <span class="label">Faellesarealer 3</span>
+      </a>
+      <a href="f%C3%A6llesarealer/IMG_0924.jpeg" class="glightbox" data-gallery="faellesarealer" data-title="Faellesarealer 4">
+        <img src="f%C3%A6llesarealer/IMG_0924.jpeg" alt="Faellesarealer 4" loading="lazy">
+        <span class="label">Faellesarealer 4</span>
+      </a>
+      <a href="f%C3%A6llesarealer/IMG_0925.jpeg" class="glightbox" data-gallery="faellesarealer" data-title="Faellesarealer 5">
+        <img src="f%C3%A6llesarealer/IMG_0925.jpeg" alt="Faellesarealer 5" loading="lazy">
+        <span class="label">Faellesarealer 5</span>
+      </a>
+      <a href="f%C3%A6llesarealer/IMG_0926.jpeg" class="glightbox" data-gallery="faellesarealer" data-title="Faellesarealer 6">
+        <img src="f%C3%A6llesarealer/IMG_0926.jpeg" alt="Faellesarealer 6" loading="lazy">
+        <span class="label">Faellesarealer 6</span>
+      </a>
+      <a href="f%C3%A6llesarealer/IMG_0927.jpeg" class="glightbox" data-gallery="faellesarealer" data-title="Faellesarealer 7">
+        <img src="f%C3%A6llesarealer/IMG_0927.jpeg" alt="Faellesarealer 7" loading="lazy">
+        <span class="label">Faellesarealer 7</span>
+      </a>
+      <a href="f%C3%A6llesarealer/IMG_0928.jpeg" class="glightbox" data-gallery="faellesarealer" data-title="Faellesarealer 8">
+        <img src="f%C3%A6llesarealer/IMG_0928.jpeg" alt="Faellesarealer 8" loading="lazy">
+        <span class="label">Faellesarealer 8</span>
+      </a>
+      <a href="f%C3%A6llesarealer/IMG_0929.jpeg" class="glightbox" data-gallery="faellesarealer" data-title="Faellesarealer 9">
+        <img src="f%C3%A6llesarealer/IMG_0929.jpeg" alt="Faellesarealer 9" loading="lazy">
+        <span class="label">Faellesarealer 9</span>
+      </a>
+      <a href="f%C3%A6llesarealer/IMG_0930.jpeg" class="glightbox" data-gallery="faellesarealer" data-title="Faellesarealer 10">
+        <img src="f%C3%A6llesarealer/IMG_0930.jpeg" alt="Faellesarealer 10" loading="lazy">
+        <span class="label">Faellesarealer 10</span>
+      </a>
+      <a href="f%C3%A6llesarealer/IMG_0931.jpeg" class="glightbox" data-gallery="faellesarealer" data-title="Faellesarealer 11">
+        <img src="f%C3%A6llesarealer/IMG_0931.jpeg" alt="Faellesarealer 11" loading="lazy">
+        <span class="label">Faellesarealer 11</span>
+      </a>
+      <a href="f%C3%A6llesarealer/IMG_0932.jpeg" class="glightbox" data-gallery="faellesarealer" data-title="Faellesarealer 12">
+        <img src="f%C3%A6llesarealer/IMG_0932.jpeg" alt="Faellesarealer 12" loading="lazy">
+        <span class="label">Faellesarealer 12</span>
+      </a>
+      <a href="f%C3%A6llesarealer/IMG_0933.jpeg" class="glightbox" data-gallery="faellesarealer" data-title="Faellesarealer 13">
+        <img src="f%C3%A6llesarealer/IMG_0933.jpeg" alt="Faellesarealer 13" loading="lazy">
+        <span class="label">Faellesarealer 13</span>
+      </a>
+      <a href="f%C3%A6llesarealer/IMG_0934.jpeg" class="glightbox" data-gallery="faellesarealer" data-title="Faellesarealer 14">
+        <img src="f%C3%A6llesarealer/IMG_0934.jpeg" alt="Faellesarealer 14" loading="lazy">
+        <span class="label">Faellesarealer 14</span>
+      </a>
+      <a href="f%C3%A6llesarealer/IMG_0935.jpeg" class="glightbox" data-gallery="faellesarealer" data-title="Faellesarealer 15">
+        <img src="f%C3%A6llesarealer/IMG_0935.jpeg" alt="Faellesarealer 15" loading="lazy">
+        <span class="label">Faellesarealer 15</span>
+      </a>
+      <a href="f%C3%A6llesarealer/IMG_0936.jpeg" class="glightbox" data-gallery="faellesarealer" data-title="Faellesarealer 16">
+        <img src="f%C3%A6llesarealer/IMG_0936.jpeg" alt="Faellesarealer 16" loading="lazy">
+        <span class="label">Faellesarealer 16</span>
+      </a>
+      <a href="f%C3%A6llesarealer/IMG_0937.jpeg" class="glightbox" data-gallery="faellesarealer" data-title="Faellesarealer 17">
+        <img src="f%C3%A6llesarealer/IMG_0937.jpeg" alt="Faellesarealer 17" loading="lazy">
+        <span class="label">Faellesarealer 17</span>
+      </a>
+      <a href="f%C3%A6llesarealer/IMG_0938.jpeg" class="glightbox" data-gallery="faellesarealer" data-title="Faellesarealer 18">
+        <img src="f%C3%A6llesarealer/IMG_0938.jpeg" alt="Faellesarealer 18" loading="lazy">
+        <span class="label">Faellesarealer 18</span>
+      </a>
+      <a href="f%C3%A6llesarealer/IMG_0939.jpeg" class="glightbox" data-gallery="faellesarealer" data-title="Faellesarealer 19">
+        <img src="f%C3%A6llesarealer/IMG_0939.jpeg" alt="Faellesarealer 19" loading="lazy">
+        <span class="label">Faellesarealer 19</span>
+      </a>
+      <a href="f%C3%A6llesarealer/IMG_0940.jpeg" class="glightbox" data-gallery="faellesarealer" data-title="Faellesarealer 20">
+        <img src="f%C3%A6llesarealer/IMG_0940.jpeg" alt="Faellesarealer 20" loading="lazy">
+        <span class="label">Faellesarealer 20</span>
+      </a>
+    </div>
+  </section>
+
+  <section class="section" id="vaerelser">
+    <h2>Vaerelser</h2>
+    <div class="gallery">
+      <a href="v%C3%A6relser/IMG_0941.jpeg" class="glightbox" data-gallery="vaerelser" data-title="Vaerelser 1">
+        <img src="v%C3%A6relser/IMG_0941.jpeg" alt="Vaerelser 1" loading="lazy">
+        <span class="label">Vaerelser 1</span>
+      </a>
+      <a href="v%C3%A6relser/IMG_0942.jpeg" class="glightbox" data-gallery="vaerelser" data-title="Vaerelser 2">
+        <img src="v%C3%A6relser/IMG_0942.jpeg" alt="Vaerelser 2" loading="lazy">
+        <span class="label">Vaerelser 2</span>
+      </a>
+      <a href="v%C3%A6relser/IMG_0943.jpeg" class="glightbox" data-gallery="vaerelser" data-title="Vaerelser 3">
+        <img src="v%C3%A6relser/IMG_0943.jpeg" alt="Vaerelser 3" loading="lazy">
+        <span class="label">Vaerelser 3</span>
+      </a>
+      <a href="v%C3%A6relser/IMG_0944.jpeg" class="glightbox" data-gallery="vaerelser" data-title="Vaerelser 4">
+        <img src="v%C3%A6relser/IMG_0944.jpeg" alt="Vaerelser 4" loading="lazy">
+        <span class="label">Vaerelser 4</span>
+      </a>
+      <a href="v%C3%A6relser/IMG_0945.jpeg" class="glightbox" data-gallery="vaerelser" data-title="Vaerelser 5">
+        <img src="v%C3%A6relser/IMG_0945.jpeg" alt="Vaerelser 5" loading="lazy">
+        <span class="label">Vaerelser 5</span>
+      </a>
+      <a href="v%C3%A6relser/IMG_0946.jpeg" class="glightbox" data-gallery="vaerelser" data-title="Vaerelser 6">
+        <img src="v%C3%A6relser/IMG_0946.jpeg" alt="Vaerelser 6" loading="lazy">
+        <span class="label">Vaerelser 6</span>
+      </a>
+      <a href="v%C3%A6relser/IMG_0947.jpeg" class="glightbox" data-gallery="vaerelser" data-title="Vaerelser 7">
+        <img src="v%C3%A6relser/IMG_0947.jpeg" alt="Vaerelser 7" loading="lazy">
+        <span class="label">Vaerelser 7</span>
+      </a>
+      <a href="v%C3%A6relser/IMG_0949.jpeg" class="glightbox" data-gallery="vaerelser" data-title="Vaerelser 8">
+        <img src="v%C3%A6relser/IMG_0949.jpeg" alt="Vaerelser 8" loading="lazy">
+        <span class="label">Vaerelser 8</span>
+      </a>
+      <a href="v%C3%A6relser/IMG_0950.jpeg" class="glightbox" data-gallery="vaerelser" data-title="Vaerelser 9">
+        <img src="v%C3%A6relser/IMG_0950.jpeg" alt="Vaerelser 9" loading="lazy">
+        <span class="label">Vaerelser 9</span>
+      </a>
+      <a href="v%C3%A6relser/IMG_0951.jpeg" class="glightbox" data-gallery="vaerelser" data-title="Vaerelser 10">
+        <img src="v%C3%A6relser/IMG_0951.jpeg" alt="Vaerelser 10" loading="lazy">
+        <span class="label">Vaerelser 10</span>
+      </a>
+      <a href="v%C3%A6relser/IMG_0952.jpeg" class="glightbox" data-gallery="vaerelser" data-title="Vaerelser 11">
+        <img src="v%C3%A6relser/IMG_0952.jpeg" alt="Vaerelser 11" loading="lazy">
+        <span class="label">Vaerelser 11</span>
+      </a>
+      <a href="v%C3%A6relser/IMG_0953.jpeg" class="glightbox" data-gallery="vaerelser" data-title="Vaerelser 12">
+        <img src="v%C3%A6relser/IMG_0953.jpeg" alt="Vaerelser 12" loading="lazy">
+        <span class="label">Vaerelser 12</span>
+      </a>
+      <a href="v%C3%A6relser/IMG_0954.jpeg" class="glightbox" data-gallery="vaerelser" data-title="Vaerelser 13">
+        <img src="v%C3%A6relser/IMG_0954.jpeg" alt="Vaerelser 13" loading="lazy">
+        <span class="label">Vaerelser 13</span>
+      </a>
+      <a href="v%C3%A6relser/IMG_0956.jpeg" class="glightbox" data-gallery="vaerelser" data-title="Vaerelser 14">
+        <img src="v%C3%A6relser/IMG_0956.jpeg" alt="Vaerelser 14" loading="lazy">
+        <span class="label">Vaerelser 14</span>
+      </a>
+      <a href="v%C3%A6relser/IMG_0957.jpeg" class="glightbox" data-gallery="vaerelser" data-title="Vaerelser 15">
+        <img src="v%C3%A6relser/IMG_0957.jpeg" alt="Vaerelser 15" loading="lazy">
+        <span class="label">Vaerelser 15</span>
+      </a>
+      <a href="v%C3%A6relser/IMG_0958.jpeg" class="glightbox" data-gallery="vaerelser" data-title="Vaerelser 16">
+        <img src="v%C3%A6relser/IMG_0958.jpeg" alt="Vaerelser 16" loading="lazy">
+        <span class="label">Vaerelser 16</span>
+      </a>
+      <a href="v%C3%A6relser/IMG_0964.jpeg" class="glightbox" data-gallery="vaerelser" data-title="Vaerelser 17">
+        <img src="v%C3%A6relser/IMG_0964.jpeg" alt="Vaerelser 17" loading="lazy">
+        <span class="label">Vaerelser 17</span>
+      </a>
+    </div>
+  </section>
+
+  <section class="section" id="gul-gang">
+    <h2>Gul gang</h2>
+    <div class="gallery">
+      <a href="gul%20gang/IMG_0970.jpeg" class="glightbox" data-gallery="gul-gang" data-title="Gul gang 1">
+        <img src="gul%20gang/IMG_0970.jpeg" alt="Gul gang 1" loading="lazy">
+        <span class="label">Gul gang 1</span>
+      </a>
+      <a href="gul%20gang/IMG_0971.jpeg" class="glightbox" data-gallery="gul-gang" data-title="Gul gang 2">
+        <img src="gul%20gang/IMG_0971.jpeg" alt="Gul gang 2" loading="lazy">
+        <span class="label">Gul gang 2</span>
+      </a>
+      <a href="gul%20gang/IMG_0972.jpeg" class="glightbox" data-gallery="gul-gang" data-title="Gul gang 3">
+        <img src="gul%20gang/IMG_0972.jpeg" alt="Gul gang 3" loading="lazy">
+        <span class="label">Gul gang 3</span>
+      </a>
+      <a href="gul%20gang/IMG_0973.jpeg" class="glightbox" data-gallery="gul-gang" data-title="Gul gang 4">
+        <img src="gul%20gang/IMG_0973.jpeg" alt="Gul gang 4" loading="lazy">
+        <span class="label">Gul gang 4</span>
+      </a>
+      <a href="gul%20gang/IMG_0974.jpeg" class="glightbox" data-gallery="gul-gang" data-title="Gul gang 5">
+        <img src="gul%20gang/IMG_0974.jpeg" alt="Gul gang 5" loading="lazy">
+        <span class="label">Gul gang 5</span>
+      </a>
+      <a href="gul%20gang/IMG_0975.jpeg" class="glightbox" data-gallery="gul-gang" data-title="Gul gang 6">
+        <img src="gul%20gang/IMG_0975.jpeg" alt="Gul gang 6" loading="lazy">
+        <span class="label">Gul gang 6</span>
+      </a>
+      <a href="gul%20gang/IMG_0976.jpeg" class="glightbox" data-gallery="gul-gang" data-title="Gul gang 7">
+        <img src="gul%20gang/IMG_0976.jpeg" alt="Gul gang 7" loading="lazy">
+        <span class="label">Gul gang 7</span>
+      </a>
+      <a href="gul%20gang/IMG_0977.jpeg" class="glightbox" data-gallery="gul-gang" data-title="Gul gang 8">
+        <img src="gul%20gang/IMG_0977.jpeg" alt="Gul gang 8" loading="lazy">
+        <span class="label">Gul gang 8</span>
+      </a>
+      <a href="gul%20gang/IMG_0978.jpeg" class="glightbox" data-gallery="gul-gang" data-title="Gul gang 9">
+        <img src="gul%20gang/IMG_0978.jpeg" alt="Gul gang 9" loading="lazy">
+        <span class="label">Gul gang 9</span>
+      </a>
+      <a href="gul%20gang/IMG_0979.jpeg" class="glightbox" data-gallery="gul-gang" data-title="Gul gang 10">
+        <img src="gul%20gang/IMG_0979.jpeg" alt="Gul gang 10" loading="lazy">
+        <span class="label">Gul gang 10</span>
+      </a>
+      <a href="gul%20gang/IMG_0980.jpeg" class="glightbox" data-gallery="gul-gang" data-title="Gul gang 11">
+        <img src="gul%20gang/IMG_0980.jpeg" alt="Gul gang 11" loading="lazy">
+        <span class="label">Gul gang 11</span>
+      </a>
+      <a href="gul%20gang/IMG_0981.jpeg" class="glightbox" data-gallery="gul-gang" data-title="Gul gang 12">
+        <img src="gul%20gang/IMG_0981.jpeg" alt="Gul gang 12" loading="lazy">
+        <span class="label">Gul gang 12</span>
+      </a>
+      <a href="gul%20gang/IMG_0982.jpeg" class="glightbox" data-gallery="gul-gang" data-title="Gul gang 13">
+        <img src="gul%20gang/IMG_0982.jpeg" alt="Gul gang 13" loading="lazy">
+        <span class="label">Gul gang 13</span>
+      </a>
+      <a href="gul%20gang/IMG_0983.jpeg" class="glightbox" data-gallery="gul-gang" data-title="Gul gang 14">
+        <img src="gul%20gang/IMG_0983.jpeg" alt="Gul gang 14" loading="lazy">
+        <span class="label">Gul gang 14</span>
+      </a>
+      <a href="gul%20gang/IMG_0984.jpeg" class="glightbox" data-gallery="gul-gang" data-title="Gul gang 15">
+        <img src="gul%20gang/IMG_0984.jpeg" alt="Gul gang 15" loading="lazy">
+        <span class="label">Gul gang 15</span>
+      </a>
+      <a href="gul%20gang/IMG_0985.jpeg" class="glightbox" data-gallery="gul-gang" data-title="Gul gang 16">
+        <img src="gul%20gang/IMG_0985.jpeg" alt="Gul gang 16" loading="lazy">
+        <span class="label">Gul gang 16</span>
+      </a>
+      <a href="gul%20gang/IMG_0986.jpeg" class="glightbox" data-gallery="gul-gang" data-title="Gul gang 17">
+        <img src="gul%20gang/IMG_0986.jpeg" alt="Gul gang 17" loading="lazy">
+        <span class="label">Gul gang 17</span>
+      </a>
+      <a href="gul%20gang/IMG_0987.jpeg" class="glightbox" data-gallery="gul-gang" data-title="Gul gang 18">
+        <img src="gul%20gang/IMG_0987.jpeg" alt="Gul gang 18" loading="lazy">
+        <span class="label">Gul gang 18</span>
+      </a>
+      <a href="gul%20gang/IMG_0988.jpeg" class="glightbox" data-gallery="gul-gang" data-title="Gul gang 19">
+        <img src="gul%20gang/IMG_0988.jpeg" alt="Gul gang 19" loading="lazy">
+        <span class="label">Gul gang 19</span>
+      </a>
+      <a href="gul%20gang/IMG_0989.jpeg" class="glightbox" data-gallery="gul-gang" data-title="Gul gang 20">
+        <img src="gul%20gang/IMG_0989.jpeg" alt="Gul gang 20" loading="lazy">
+        <span class="label">Gul gang 20</span>
+      </a>
+      <a href="gul%20gang/IMG_0990.jpeg" class="glightbox" data-gallery="gul-gang" data-title="Gul gang 21">
+        <img src="gul%20gang/IMG_0990.jpeg" alt="Gul gang 21" loading="lazy">
+        <span class="label">Gul gang 21</span>
+      </a>
+      <a href="gul%20gang/IMG_0991.jpeg" class="glightbox" data-gallery="gul-gang" data-title="Gul gang 22">
+        <img src="gul%20gang/IMG_0991.jpeg" alt="Gul gang 22" loading="lazy">
+        <span class="label">Gul gang 22</span>
+      </a>
+      <a href="gul%20gang/IMG_0992.jpeg" class="glightbox" data-gallery="gul-gang" data-title="Gul gang 23">
+        <img src="gul%20gang/IMG_0992.jpeg" alt="Gul gang 23" loading="lazy">
+        <span class="label">Gul gang 23</span>
+      </a>
+      <a href="gul%20gang/IMG_0993.jpeg" class="glightbox" data-gallery="gul-gang" data-title="Gul gang 24">
+        <img src="gul%20gang/IMG_0993.jpeg" alt="Gul gang 24" loading="lazy">
+        <span class="label">Gul gang 24</span>
+      </a>
+      <a href="gul%20gang/IMG_0994.jpeg" class="glightbox" data-gallery="gul-gang" data-title="Gul gang 25">
+        <img src="gul%20gang/IMG_0994.jpeg" alt="Gul gang 25" loading="lazy">
+        <span class="label">Gul gang 25</span>
+      </a>
+      <a href="gul%20gang/IMG_0995.jpeg" class="glightbox" data-gallery="gul-gang" data-title="Gul gang 26">
+        <img src="gul%20gang/IMG_0995.jpeg" alt="Gul gang 26" loading="lazy">
+        <span class="label">Gul gang 26</span>
+      </a>
+      <a href="gul%20gang/IMG_0996.jpeg" class="glightbox" data-gallery="gul-gang" data-title="Gul gang 27">
+        <img src="gul%20gang/IMG_0996.jpeg" alt="Gul gang 27" loading="lazy">
+        <span class="label">Gul gang 27</span>
+      </a>
+    </div>
+  </section>
+
+  <section class="section" id="lager">
+    <h2>Lager</h2>
+    <div class="gallery">
+      <a href="lager/IMG_0998.jpeg" class="glightbox" data-gallery="lager" data-title="Lager 1">
+        <img src="lager/IMG_0998.jpeg" alt="Lager 1" loading="lazy">
+        <span class="label">Lager 1</span>
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+<script>
+  const lightbox = GLightbox({
+    touchNavigation: true,
+    loop: true,
+    preload: true
+  });
+
+  document.querySelectorAll('nav a').forEach(link => {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      document.querySelectorAll('nav a').forEach(l => l.classList.remove('active'));
+      this.classList.add('active');
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
