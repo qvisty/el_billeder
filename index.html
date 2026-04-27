@@ -105,10 +105,23 @@
       left: 0;
       right: 0;
       padding: 0.5rem 0.75rem;
-      background: linear-gradient(transparent, rgba(0,0,0,0.6));
+      background: linear-gradient(transparent, rgba(0,0,0,0.7));
       color: #fff;
-      font-size: 0.85rem;
+      font-size: 0.8rem;
       font-weight: 500;
+      line-height: 1.3;
+    }
+
+    .gallery .label .num {
+      font-weight: 700;
+      font-size: 0.85rem;
+    }
+
+    .gallery .label .desc {
+      display: block;
+      font-weight: 400;
+      font-size: 0.75rem;
+      opacity: 0.9;
     }
 
     @media (max-width: 600px) {
@@ -118,7 +131,8 @@
         gap: 0.5rem;
       }
       .gallery a { border-radius: 4px; }
-      .gallery .label { font-size: 0.75rem; padding: 0.3rem 0.5rem; }
+      .gallery .label { font-size: 0.7rem; padding: 0.3rem 0.5rem; }
+      .gallery .label .desc { font-size: 0.65rem; }
       main { padding: 1rem 0.5rem; }
     }
   </style>
@@ -141,33 +155,33 @@
   <section class="section" id="koekken">
     <h2>Kokken</h2>
     <div class="gallery">
-      <a href="k%C3%B8kken/IMG_0961.jpeg" class="glightbox" data-gallery="koekken" data-title="Kokken 1">
+      <a href="k%C3%B8kken/IMG_0961.jpeg" class="glightbox" data-gallery="koekken" data-title="Køkken 1: Klap købes og monteres (hele sættet)">
         <img src="k%C3%B8kken/IMG_0961.jpeg" alt="Kokken 1" loading="lazy">
-        <span class="label">Kokken 1</span>
+        <span class="label"><span class="num">1</span><span class="desc">Klap købes og monteres (hele sættet)</span></span>
       </a>
-      <a href="k%C3%B8kken/IMG_0962.jpeg" class="glightbox" data-gallery="koekken" data-title="Kokken 2">
+      <a href="k%C3%B8kken/IMG_0962.jpeg" class="glightbox" data-gallery="koekken" data-title="Køkken 2: Klap købes og monteres (hele sættet)">
         <img src="k%C3%B8kken/IMG_0962.jpeg" alt="Kokken 2" loading="lazy">
-        <span class="label">Kokken 2</span>
+        <span class="label"><span class="num">2</span><span class="desc">Klap købes og monteres (hele sættet)</span></span>
       </a>
-      <a href="k%C3%B8kken/IMG_0963.jpeg" class="glightbox" data-gallery="koekken" data-title="Kokken 3">
+      <a href="k%C3%B8kken/IMG_0963.jpeg" class="glightbox" data-gallery="koekken" data-title="Køkken 3: Klap købes og monteres (hele sættet)">
         <img src="k%C3%B8kken/IMG_0963.jpeg" alt="Kokken 3" loading="lazy">
-        <span class="label">Kokken 3</span>
+        <span class="label"><span class="num">3</span><span class="desc">Klap købes og monteres (hele sættet)</span></span>
       </a>
-      <a href="k%C3%B8kken/IMG_0965.jpeg" class="glightbox" data-gallery="koekken" data-title="Kokken 4">
+      <a href="k%C3%B8kken/IMG_0965.jpeg" class="glightbox" data-gallery="koekken" data-title="Køkken 4: Klap købes og monteres (hele sættet)">
         <img src="k%C3%B8kken/IMG_0965.jpeg" alt="Kokken 4" loading="lazy">
-        <span class="label">Kokken 4</span>
+        <span class="label"><span class="num">4</span><span class="desc">Klap købes og monteres (hele sættet)</span></span>
       </a>
-      <a href="k%C3%B8kken/IMG_0966.jpeg" class="glightbox" data-gallery="koekken" data-title="Kokken 5">
+      <a href="k%C3%B8kken/IMG_0966.jpeg" class="glightbox" data-gallery="koekken" data-title="Køkken 5: Afbryder skiftes — Svær at tænde og slukke">
         <img src="k%C3%B8kken/IMG_0966.jpeg" alt="Kokken 5" loading="lazy">
-        <span class="label">Kokken 5</span>
+        <span class="label"><span class="num">5</span><span class="desc">Afbryder skiftes — svær at tænde/slukke</span></span>
       </a>
-      <a href="k%C3%B8kken/IMG_0967.jpeg" class="glightbox" data-gallery="koekken" data-title="Kokken 6">
+      <a href="k%C3%B8kken/IMG_0967.jpeg" class="glightbox" data-gallery="koekken" data-title="Køkken 6: Klap købes og monteres (hele sættet)">
         <img src="k%C3%B8kken/IMG_0967.jpeg" alt="Kokken 6" loading="lazy">
-        <span class="label">Kokken 6</span>
+        <span class="label"><span class="num">6</span><span class="desc">Klap købes og monteres (hele sættet)</span></span>
       </a>
-      <a href="k%C3%B8kken/IMG_0968.jpeg" class="glightbox" data-gallery="koekken" data-title="Kokken 7">
+      <a href="k%C3%B8kken/IMG_0968.jpeg" class="glightbox" data-gallery="koekken" data-title="Køkken 7: Skiftes helt — Ser brændt ud indvendig">
         <img src="k%C3%B8kken/IMG_0968.jpeg" alt="Kokken 7" loading="lazy">
-        <span class="label">Kokken 7</span>
+        <span class="label"><span class="num">7</span><span class="desc">Skiftes helt — ser brændt ud indvendig</span></span>
       </a>
     </div>
   </section>
@@ -175,85 +189,85 @@
   <section class="section" id="faellesarealer">
     <h2>Faellesarealer</h2>
     <div class="gallery">
-      <a href="f%C3%A6llesarealer/IMG_0921.jpeg" class="glightbox" data-gallery="faellesarealer" data-title="Faellesarealer 1">
+      <a href="f%C3%A6llesarealer/IMG_0921.jpeg" class="glightbox" data-gallery="faellesarealer" data-title="Fællesarealer 1: Dæksel købes og monteres">
         <img src="f%C3%A6llesarealer/IMG_0921.jpeg" alt="Faellesarealer 1" loading="lazy">
-        <span class="label">Faellesarealer 1</span>
+        <span class="label"><span class="num">1</span><span class="desc">Dæksel købes og monteres</span></span>
       </a>
-      <a href="f%C3%A6llesarealer/IMG_0922.jpeg" class="glightbox" data-gallery="faellesarealer" data-title="Faellesarealer 2">
+      <a href="f%C3%A6llesarealer/IMG_0922.jpeg" class="glightbox" data-gallery="faellesarealer" data-title="Fællesarealer 2: Klap købes og monteres (hele sættet)">
         <img src="f%C3%A6llesarealer/IMG_0922.jpeg" alt="Faellesarealer 2" loading="lazy">
-        <span class="label">Faellesarealer 2</span>
+        <span class="label"><span class="num">2</span><span class="desc">Klap købes og monteres (hele sættet)</span></span>
       </a>
-      <a href="f%C3%A6llesarealer/IMG_0923.jpeg" class="glightbox" data-gallery="faellesarealer" data-title="Faellesarealer 3">
+      <a href="f%C3%A6llesarealer/IMG_0923.jpeg" class="glightbox" data-gallery="faellesarealer" data-title="Fællesarealer 3: Dæksel købes og monteres">
         <img src="f%C3%A6llesarealer/IMG_0923.jpeg" alt="Faellesarealer 3" loading="lazy">
-        <span class="label">Faellesarealer 3</span>
+        <span class="label"><span class="num">3</span><span class="desc">Dæksel købes og monteres</span></span>
       </a>
-      <a href="f%C3%A6llesarealer/IMG_0924.jpeg" class="glightbox" data-gallery="faellesarealer" data-title="Faellesarealer 4">
+      <a href="f%C3%A6llesarealer/IMG_0924.jpeg" class="glightbox" data-gallery="faellesarealer" data-title="Fællesarealer 4: Dæksel købes og monteres">
         <img src="f%C3%A6llesarealer/IMG_0924.jpeg" alt="Faellesarealer 4" loading="lazy">
-        <span class="label">Faellesarealer 4</span>
+        <span class="label"><span class="num">4</span><span class="desc">Dæksel købes og monteres</span></span>
       </a>
-      <a href="f%C3%A6llesarealer/IMG_0925.jpeg" class="glightbox" data-gallery="faellesarealer" data-title="Faellesarealer 5">
+      <a href="f%C3%A6llesarealer/IMG_0925.jpeg" class="glightbox" data-gallery="faellesarealer" data-title="Fællesarealer 5: Dæksel købes og monteres — Ramme også skadet">
         <img src="f%C3%A6llesarealer/IMG_0925.jpeg" alt="Faellesarealer 5" loading="lazy">
-        <span class="label">Faellesarealer 5</span>
+        <span class="label"><span class="num">5</span><span class="desc">Dæksel købes og monteres — ramme også skadet</span></span>
       </a>
-      <a href="f%C3%A6llesarealer/IMG_0926.jpeg" class="glightbox" data-gallery="faellesarealer" data-title="Faellesarealer 6">
+      <a href="f%C3%A6llesarealer/IMG_0926.jpeg" class="glightbox" data-gallery="faellesarealer" data-title="Fællesarealer 6: Slettes (dobbelt foto)">
         <img src="f%C3%A6llesarealer/IMG_0926.jpeg" alt="Faellesarealer 6" loading="lazy">
-        <span class="label">Faellesarealer 6</span>
+        <span class="label"><span class="num">6</span><span class="desc">Slettes (dobbelt foto)</span></span>
       </a>
-      <a href="f%C3%A6llesarealer/IMG_0927.jpeg" class="glightbox" data-gallery="faellesarealer" data-title="Faellesarealer 7">
+      <a href="f%C3%A6llesarealer/IMG_0927.jpeg" class="glightbox" data-gallery="faellesarealer" data-title="Fællesarealer 7: Stikkontakt trækkes frem">
         <img src="f%C3%A6llesarealer/IMG_0927.jpeg" alt="Faellesarealer 7" loading="lazy">
-        <span class="label">Faellesarealer 7</span>
+        <span class="label"><span class="num">7</span><span class="desc">Stikkontakt trækkes frem</span></span>
       </a>
-      <a href="f%C3%A6llesarealer/IMG_0928.jpeg" class="glightbox" data-gallery="faellesarealer" data-title="Faellesarealer 8">
+      <a href="f%C3%A6llesarealer/IMG_0928.jpeg" class="glightbox" data-gallery="faellesarealer" data-title="Fællesarealer 8: Blænddæksel monteres — Boksen er tom">
         <img src="f%C3%A6llesarealer/IMG_0928.jpeg" alt="Faellesarealer 8" loading="lazy">
-        <span class="label">Faellesarealer 8</span>
+        <span class="label"><span class="num">8</span><span class="desc">Blænddæksel monteres — boksen er tom</span></span>
       </a>
-      <a href="f%C3%A6llesarealer/IMG_0929.jpeg" class="glightbox" data-gallery="faellesarealer" data-title="Faellesarealer 9">
+      <a href="f%C3%A6llesarealer/IMG_0929.jpeg" class="glightbox" data-gallery="faellesarealer" data-title="Fællesarealer 9: Blænddæksel monteres">
         <img src="f%C3%A6llesarealer/IMG_0929.jpeg" alt="Faellesarealer 9" loading="lazy">
-        <span class="label">Faellesarealer 9</span>
+        <span class="label"><span class="num">9</span><span class="desc">Blænddæksel monteres</span></span>
       </a>
-      <a href="f%C3%A6llesarealer/IMG_0930.jpeg" class="glightbox" data-gallery="faellesarealer" data-title="Faellesarealer 10">
+      <a href="f%C3%A6llesarealer/IMG_0930.jpeg" class="glightbox" data-gallery="faellesarealer" data-title="Fællesarealer 10: Dæksel købes og monteres">
         <img src="f%C3%A6llesarealer/IMG_0930.jpeg" alt="Faellesarealer 10" loading="lazy">
-        <span class="label">Faellesarealer 10</span>
+        <span class="label"><span class="num">10</span><span class="desc">Dæksel købes og monteres</span></span>
       </a>
-      <a href="f%C3%A6llesarealer/IMG_0931.jpeg" class="glightbox" data-gallery="faellesarealer" data-title="Faellesarealer 11">
+      <a href="f%C3%A6llesarealer/IMG_0931.jpeg" class="glightbox" data-gallery="faellesarealer" data-title="Fællesarealer 11: Stikkontakt trækkes frem">
         <img src="f%C3%A6llesarealer/IMG_0931.jpeg" alt="Faellesarealer 11" loading="lazy">
-        <span class="label">Faellesarealer 11</span>
+        <span class="label"><span class="num">11</span><span class="desc">Stikkontakt trækkes frem</span></span>
       </a>
-      <a href="f%C3%A6llesarealer/IMG_0932.jpeg" class="glightbox" data-gallery="faellesarealer" data-title="Faellesarealer 12">
+      <a href="f%C3%A6llesarealer/IMG_0932.jpeg" class="glightbox" data-gallery="faellesarealer" data-title="Fællesarealer 12: Stikkontakt trækkes frem + dæksel købes og monteres">
         <img src="f%C3%A6llesarealer/IMG_0932.jpeg" alt="Faellesarealer 12" loading="lazy">
-        <span class="label">Faellesarealer 12</span>
+        <span class="label"><span class="num">12</span><span class="desc">Stikkontakt trækkes frem + dæksel købes og monteres</span></span>
       </a>
-      <a href="f%C3%A6llesarealer/IMG_0933.jpeg" class="glightbox" data-gallery="faellesarealer" data-title="Faellesarealer 13">
+      <a href="f%C3%A6llesarealer/IMG_0933.jpeg" class="glightbox" data-gallery="faellesarealer" data-title="Fællesarealer 13: Ramme udskiftes">
         <img src="f%C3%A6llesarealer/IMG_0933.jpeg" alt="Faellesarealer 13" loading="lazy">
-        <span class="label">Faellesarealer 13</span>
+        <span class="label"><span class="num">13</span><span class="desc">Ramme udskiftes</span></span>
       </a>
-      <a href="f%C3%A6llesarealer/IMG_0934.jpeg" class="glightbox" data-gallery="faellesarealer" data-title="Faellesarealer 14">
+      <a href="f%C3%A6llesarealer/IMG_0934.jpeg" class="glightbox" data-gallery="faellesarealer" data-title="Fællesarealer 14: Blænddæksel monteres">
         <img src="f%C3%A6llesarealer/IMG_0934.jpeg" alt="Faellesarealer 14" loading="lazy">
-        <span class="label">Faellesarealer 14</span>
+        <span class="label"><span class="num">14</span><span class="desc">Blænddæksel monteres</span></span>
       </a>
-      <a href="f%C3%A6llesarealer/IMG_0935.jpeg" class="glightbox" data-gallery="faellesarealer" data-title="Faellesarealer 15">
+      <a href="f%C3%A6llesarealer/IMG_0935.jpeg" class="glightbox" data-gallery="faellesarealer" data-title="Fællesarealer 15: Dæksel købes og monteres">
         <img src="f%C3%A6llesarealer/IMG_0935.jpeg" alt="Faellesarealer 15" loading="lazy">
-        <span class="label">Faellesarealer 15</span>
+        <span class="label"><span class="num">15</span><span class="desc">Dæksel købes og monteres</span></span>
       </a>
-      <a href="f%C3%A6llesarealer/IMG_0936.jpeg" class="glightbox" data-gallery="faellesarealer" data-title="Faellesarealer 16">
+      <a href="f%C3%A6llesarealer/IMG_0936.jpeg" class="glightbox" data-gallery="faellesarealer" data-title="Fællesarealer 16: Dæksel købes og monteres">
         <img src="f%C3%A6llesarealer/IMG_0936.jpeg" alt="Faellesarealer 16" loading="lazy">
-        <span class="label">Faellesarealer 16</span>
+        <span class="label"><span class="num">16</span><span class="desc">Dæksel købes og monteres</span></span>
       </a>
-      <a href="f%C3%A6llesarealer/IMG_0937.jpeg" class="glightbox" data-gallery="faellesarealer" data-title="Faellesarealer 17">
+      <a href="f%C3%A6llesarealer/IMG_0937.jpeg" class="glightbox" data-gallery="faellesarealer" data-title="Fællesarealer 17: Dæksel købes og monteres">
         <img src="f%C3%A6llesarealer/IMG_0937.jpeg" alt="Faellesarealer 17" loading="lazy">
-        <span class="label">Faellesarealer 17</span>
+        <span class="label"><span class="num">17</span><span class="desc">Dæksel købes og monteres</span></span>
       </a>
-      <a href="f%C3%A6llesarealer/IMG_0938.jpeg" class="glightbox" data-gallery="faellesarealer" data-title="Faellesarealer 18">
+      <a href="f%C3%A6llesarealer/IMG_0938.jpeg" class="glightbox" data-gallery="faellesarealer" data-title="Fællesarealer 18: En form for dæksel — indkøbes og monteres">
         <img src="f%C3%A6llesarealer/IMG_0938.jpeg" alt="Faellesarealer 18" loading="lazy">
-        <span class="label">Faellesarealer 18</span>
+        <span class="label"><span class="num">18</span><span class="desc">En form for dæksel — indkøbes og monteres</span></span>
       </a>
-      <a href="f%C3%A6llesarealer/IMG_0939.jpeg" class="glightbox" data-gallery="faellesarealer" data-title="Faellesarealer 19">
+      <a href="f%C3%A6llesarealer/IMG_0939.jpeg" class="glightbox" data-gallery="faellesarealer" data-title="Fællesarealer 19: En form for dæksel — indkøbes og monteres">
         <img src="f%C3%A6llesarealer/IMG_0939.jpeg" alt="Faellesarealer 19" loading="lazy">
-        <span class="label">Faellesarealer 19</span>
+        <span class="label"><span class="num">19</span><span class="desc">En form for dæksel — indkøbes og monteres</span></span>
       </a>
-      <a href="f%C3%A6llesarealer/IMG_0940.jpeg" class="glightbox" data-gallery="faellesarealer" data-title="Faellesarealer 20">
+      <a href="f%C3%A6llesarealer/IMG_0940.jpeg" class="glightbox" data-gallery="faellesarealer" data-title="Fællesarealer 20: Dæksel købes og monteres">
         <img src="f%C3%A6llesarealer/IMG_0940.jpeg" alt="Faellesarealer 20" loading="lazy">
-        <span class="label">Faellesarealer 20</span>
+        <span class="label"><span class="num">20</span><span class="desc">Dæksel købes og monteres</span></span>
       </a>
     </div>
   </section>
@@ -261,73 +275,73 @@
   <section class="section" id="vaerelser">
     <h2>Vaerelser</h2>
     <div class="gallery">
-      <a href="v%C3%A6relser/IMG_0941.jpeg" class="glightbox" data-gallery="vaerelser" data-title="Vaerelser 1">
+      <a href="v%C3%A6relser/IMG_0941.jpeg" class="glightbox" data-gallery="vaerelser" data-title="Værelser 1: Dæksel købes og monteres ×2">
         <img src="v%C3%A6relser/IMG_0941.jpeg" alt="Vaerelser 1" loading="lazy">
-        <span class="label">Vaerelser 1</span>
+        <span class="label"><span class="num">1</span><span class="desc">Dæksel købes og monteres ×2</span></span>
       </a>
-      <a href="v%C3%A6relser/IMG_0942.jpeg" class="glightbox" data-gallery="vaerelser" data-title="Vaerelser 2">
+      <a href="v%C3%A6relser/IMG_0942.jpeg" class="glightbox" data-gallery="vaerelser" data-title="Værelser 2">
         <img src="v%C3%A6relser/IMG_0942.jpeg" alt="Vaerelser 2" loading="lazy">
-        <span class="label">Vaerelser 2</span>
+        <span class="label"><span class="num">2</span></span>
       </a>
-      <a href="v%C3%A6relser/IMG_0943.jpeg" class="glightbox" data-gallery="vaerelser" data-title="Vaerelser 3">
+      <a href="v%C3%A6relser/IMG_0943.jpeg" class="glightbox" data-gallery="vaerelser" data-title="Værelser 3 (lilla): Afbryder skiftes — Svær at tænde og slukke">
         <img src="v%C3%A6relser/IMG_0943.jpeg" alt="Vaerelser 3" loading="lazy">
-        <span class="label">Vaerelser 3</span>
+        <span class="label"><span class="num">3 (lilla)</span><span class="desc">Afbryder skiftes — svær at tænde/slukke</span></span>
       </a>
-      <a href="v%C3%A6relser/IMG_0944.jpeg" class="glightbox" data-gallery="vaerelser" data-title="Vaerelser 4">
+      <a href="v%C3%A6relser/IMG_0944.jpeg" class="glightbox" data-gallery="vaerelser" data-title="Værelser 4: Dæksel købes og monteres">
         <img src="v%C3%A6relser/IMG_0944.jpeg" alt="Vaerelser 4" loading="lazy">
-        <span class="label">Vaerelser 4</span>
+        <span class="label"><span class="num">4</span><span class="desc">Dæksel købes og monteres</span></span>
       </a>
-      <a href="v%C3%A6relser/IMG_0945.jpeg" class="glightbox" data-gallery="vaerelser" data-title="Vaerelser 5">
+      <a href="v%C3%A6relser/IMG_0945.jpeg" class="glightbox" data-gallery="vaerelser" data-title="Værelser 5: Dæksel købes og monteres">
         <img src="v%C3%A6relser/IMG_0945.jpeg" alt="Vaerelser 5" loading="lazy">
-        <span class="label">Vaerelser 5</span>
+        <span class="label"><span class="num">5</span><span class="desc">Dæksel købes og monteres</span></span>
       </a>
-      <a href="v%C3%A6relser/IMG_0946.jpeg" class="glightbox" data-gallery="vaerelser" data-title="Vaerelser 6">
+      <a href="v%C3%A6relser/IMG_0946.jpeg" class="glightbox" data-gallery="vaerelser" data-title="Værelser 6: Stikkontakt spændes">
         <img src="v%C3%A6relser/IMG_0946.jpeg" alt="Vaerelser 6" loading="lazy">
-        <span class="label">Vaerelser 6</span>
+        <span class="label"><span class="num">6</span><span class="desc">Stikkontakt spændes</span></span>
       </a>
-      <a href="v%C3%A6relser/IMG_0947.jpeg" class="glightbox" data-gallery="vaerelser" data-title="Vaerelser 7">
+      <a href="v%C3%A6relser/IMG_0947.jpeg" class="glightbox" data-gallery="vaerelser" data-title="Værelser 7: Ramme indkøbes og monteres">
         <img src="v%C3%A6relser/IMG_0947.jpeg" alt="Vaerelser 7" loading="lazy">
-        <span class="label">Vaerelser 7</span>
+        <span class="label"><span class="num">7</span><span class="desc">Ramme indkøbes og monteres</span></span>
       </a>
-      <a href="v%C3%A6relser/IMG_0949.jpeg" class="glightbox" data-gallery="vaerelser" data-title="Vaerelser 8">
+      <a href="v%C3%A6relser/IMG_0949.jpeg" class="glightbox" data-gallery="vaerelser" data-title="Værelser 8: Afbryder skiftes">
         <img src="v%C3%A6relser/IMG_0949.jpeg" alt="Vaerelser 8" loading="lazy">
-        <span class="label">Vaerelser 8</span>
+        <span class="label"><span class="num">8</span><span class="desc">Afbryder skiftes</span></span>
       </a>
-      <a href="v%C3%A6relser/IMG_0950.jpeg" class="glightbox" data-gallery="vaerelser" data-title="Vaerelser 9">
+      <a href="v%C3%A6relser/IMG_0950.jpeg" class="glightbox" data-gallery="vaerelser" data-title="Værelser 9 (blå): Afbryder skiftes — Svær at tænde og slukke">
         <img src="v%C3%A6relser/IMG_0950.jpeg" alt="Vaerelser 9" loading="lazy">
-        <span class="label">Vaerelser 9</span>
+        <span class="label"><span class="num">9 (blå)</span><span class="desc">Afbryder skiftes — svær at tænde/slukke</span></span>
       </a>
-      <a href="v%C3%A6relser/IMG_0951.jpeg" class="glightbox" data-gallery="vaerelser" data-title="Vaerelser 10">
+      <a href="v%C3%A6relser/IMG_0951.jpeg" class="glightbox" data-gallery="vaerelser" data-title="Værelser 10: Dæksel købes og monteres ×2">
         <img src="v%C3%A6relser/IMG_0951.jpeg" alt="Vaerelser 10" loading="lazy">
-        <span class="label">Vaerelser 10</span>
+        <span class="label"><span class="num">10</span><span class="desc">Dæksel købes og monteres ×2</span></span>
       </a>
-      <a href="v%C3%A6relser/IMG_0952.jpeg" class="glightbox" data-gallery="vaerelser" data-title="Vaerelser 11">
+      <a href="v%C3%A6relser/IMG_0952.jpeg" class="glightbox" data-gallery="vaerelser" data-title="Værelser 11: Dæksel købes og monteres ×2">
         <img src="v%C3%A6relser/IMG_0952.jpeg" alt="Vaerelser 11" loading="lazy">
-        <span class="label">Vaerelser 11</span>
+        <span class="label"><span class="num">11</span><span class="desc">Dæksel købes og monteres ×2</span></span>
       </a>
-      <a href="v%C3%A6relser/IMG_0953.jpeg" class="glightbox" data-gallery="vaerelser" data-title="Vaerelser 12">
+      <a href="v%C3%A6relser/IMG_0953.jpeg" class="glightbox" data-gallery="vaerelser" data-title="Værelser 12: Dæksel købes og monteres + afbryder skiftes">
         <img src="v%C3%A6relser/IMG_0953.jpeg" alt="Vaerelser 12" loading="lazy">
-        <span class="label">Vaerelser 12</span>
+        <span class="label"><span class="num">12</span><span class="desc">Dæksel købes og monteres + afbryder skiftes</span></span>
       </a>
-      <a href="v%C3%A6relser/IMG_0954.jpeg" class="glightbox" data-gallery="vaerelser" data-title="Vaerelser 13">
+      <a href="v%C3%A6relser/IMG_0954.jpeg" class="glightbox" data-gallery="vaerelser" data-title="Værelser 13: Dæksel købes og monteres">
         <img src="v%C3%A6relser/IMG_0954.jpeg" alt="Vaerelser 13" loading="lazy">
-        <span class="label">Vaerelser 13</span>
+        <span class="label"><span class="num">13</span><span class="desc">Dæksel købes og monteres</span></span>
       </a>
-      <a href="v%C3%A6relser/IMG_0956.jpeg" class="glightbox" data-gallery="vaerelser" data-title="Vaerelser 14">
+      <a href="v%C3%A6relser/IMG_0956.jpeg" class="glightbox" data-gallery="vaerelser" data-title="Værelser 14: Dæksel købes og monteres">
         <img src="v%C3%A6relser/IMG_0956.jpeg" alt="Vaerelser 14" loading="lazy">
-        <span class="label">Vaerelser 14</span>
+        <span class="label"><span class="num">14</span><span class="desc">Dæksel købes og monteres</span></span>
       </a>
-      <a href="v%C3%A6relser/IMG_0957.jpeg" class="glightbox" data-gallery="vaerelser" data-title="Vaerelser 15">
+      <a href="v%C3%A6relser/IMG_0957.jpeg" class="glightbox" data-gallery="vaerelser" data-title="Værelser 15: Dæksel købes og monteres">
         <img src="v%C3%A6relser/IMG_0957.jpeg" alt="Vaerelser 15" loading="lazy">
-        <span class="label">Vaerelser 15</span>
+        <span class="label"><span class="num">15</span><span class="desc">Dæksel købes og monteres</span></span>
       </a>
-      <a href="v%C3%A6relser/IMG_0958.jpeg" class="glightbox" data-gallery="vaerelser" data-title="Vaerelser 16">
+      <a href="v%C3%A6relser/IMG_0958.jpeg" class="glightbox" data-gallery="vaerelser" data-title="Værelser 16: Dæksel købes og monteres">
         <img src="v%C3%A6relser/IMG_0958.jpeg" alt="Vaerelser 16" loading="lazy">
-        <span class="label">Vaerelser 16</span>
+        <span class="label"><span class="num">16</span><span class="desc">Dæksel købes og monteres</span></span>
       </a>
-      <a href="v%C3%A6relser/IMG_0964.jpeg" class="glightbox" data-gallery="vaerelser" data-title="Vaerelser 17">
+      <a href="v%C3%A6relser/IMG_0964.jpeg" class="glightbox" data-gallery="vaerelser" data-title="Værelser 17 (køkken): Klap købes og monteres">
         <img src="v%C3%A6relser/IMG_0964.jpeg" alt="Vaerelser 17" loading="lazy">
-        <span class="label">Vaerelser 17</span>
+        <span class="label"><span class="num">17 (køkken)</span><span class="desc">Klap købes og monteres</span></span>
       </a>
     </div>
   </section>
@@ -335,113 +349,113 @@
   <section class="section" id="gul-gang">
     <h2>Gul gang</h2>
     <div class="gallery">
-      <a href="gul%20gang/IMG_0970.jpeg" class="glightbox" data-gallery="gul-gang" data-title="Gul gang 1">
+      <a href="gul%20gang/IMG_0970.jpeg" class="glightbox" data-gallery="gul-gang" data-title="Gul gang 1: Dobbeltafbryder + enkelt afbryder + stikkontakt indkøbes og monteres">
         <img src="gul%20gang/IMG_0970.jpeg" alt="Gul gang 1" loading="lazy">
-        <span class="label">Gul gang 1</span>
+        <span class="label"><span class="num">1</span><span class="desc">Dobbeltafbryder + enkelt afbryder + stikkontakt indkøbes og monteres</span></span>
       </a>
-      <a href="gul%20gang/IMG_0971.jpeg" class="glightbox" data-gallery="gul-gang" data-title="Gul gang 2">
+      <a href="gul%20gang/IMG_0971.jpeg" class="glightbox" data-gallery="gul-gang" data-title="Gul gang 2: Dobbeltafbryder + enkelt afbryder + stikkontakt indkøbes og monteres">
         <img src="gul%20gang/IMG_0971.jpeg" alt="Gul gang 2" loading="lazy">
-        <span class="label">Gul gang 2</span>
+        <span class="label"><span class="num">2</span><span class="desc">Dobbeltafbryder + enkelt afbryder + stikkontakt indkøbes og monteres</span></span>
       </a>
-      <a href="gul%20gang/IMG_0972.jpeg" class="glightbox" data-gallery="gul-gang" data-title="Gul gang 3">
+      <a href="gul%20gang/IMG_0972.jpeg" class="glightbox" data-gallery="gul-gang" data-title="Gul gang 3: Dobbelt afbryder + to stikkontakter — indkøbes og monteres">
         <img src="gul%20gang/IMG_0972.jpeg" alt="Gul gang 3" loading="lazy">
-        <span class="label">Gul gang 3</span>
+        <span class="label"><span class="num">3</span><span class="desc">Dobbelt afbryder + to stikkontakter — indkøbes og monteres</span></span>
       </a>
-      <a href="gul%20gang/IMG_0973.jpeg" class="glightbox" data-gallery="gul-gang" data-title="Gul gang 4">
+      <a href="gul%20gang/IMG_0973.jpeg" class="glightbox" data-gallery="gul-gang" data-title="Gul gang 4: Dobbelt afbryder + to stikkontakter — indkøbes og monteres">
         <img src="gul%20gang/IMG_0973.jpeg" alt="Gul gang 4" loading="lazy">
-        <span class="label">Gul gang 4</span>
+        <span class="label"><span class="num">4</span><span class="desc">Dobbelt afbryder + to stikkontakter — indkøbes og monteres</span></span>
       </a>
-      <a href="gul%20gang/IMG_0974.jpeg" class="glightbox" data-gallery="gul-gang" data-title="Gul gang 5">
+      <a href="gul%20gang/IMG_0974.jpeg" class="glightbox" data-gallery="gul-gang" data-title="Gul gang 5: Dobbeltafbryder + enkelt afbryder + stikkontakt indkøbes og monteres">
         <img src="gul%20gang/IMG_0974.jpeg" alt="Gul gang 5" loading="lazy">
-        <span class="label">Gul gang 5</span>
+        <span class="label"><span class="num">5</span><span class="desc">Dobbeltafbryder + enkelt afbryder + stikkontakt indkøbes og monteres</span></span>
       </a>
-      <a href="gul%20gang/IMG_0975.jpeg" class="glightbox" data-gallery="gul-gang" data-title="Gul gang 6">
+      <a href="gul%20gang/IMG_0975.jpeg" class="glightbox" data-gallery="gul-gang" data-title="Gul gang 6: Afbryder indkøbes og monteres">
         <img src="gul%20gang/IMG_0975.jpeg" alt="Gul gang 6" loading="lazy">
-        <span class="label">Gul gang 6</span>
+        <span class="label"><span class="num">6</span><span class="desc">Afbryder indkøbes og monteres</span></span>
       </a>
-      <a href="gul%20gang/IMG_0976.jpeg" class="glightbox" data-gallery="gul-gang" data-title="Gul gang 7">
+      <a href="gul%20gang/IMG_0976.jpeg" class="glightbox" data-gallery="gul-gang" data-title="Gul gang 7: Dobbeltafbryder + enkelt afbryder + stikkontakt indkøbes og monteres">
         <img src="gul%20gang/IMG_0976.jpeg" alt="Gul gang 7" loading="lazy">
-        <span class="label">Gul gang 7</span>
+        <span class="label"><span class="num">7</span><span class="desc">Dobbeltafbryder + enkelt afbryder + stikkontakt indkøbes og monteres</span></span>
       </a>
-      <a href="gul%20gang/IMG_0977.jpeg" class="glightbox" data-gallery="gul-gang" data-title="Gul gang 8">
+      <a href="gul%20gang/IMG_0977.jpeg" class="glightbox" data-gallery="gul-gang" data-title="Gul gang 8: Dobbeltafbryder + enkelt afbryder + stikkontakt indkøbes og monteres">
         <img src="gul%20gang/IMG_0977.jpeg" alt="Gul gang 8" loading="lazy">
-        <span class="label">Gul gang 8</span>
+        <span class="label"><span class="num">8</span><span class="desc">Dobbeltafbryder + enkelt afbryder + stikkontakt indkøbes og monteres</span></span>
       </a>
-      <a href="gul%20gang/IMG_0978.jpeg" class="glightbox" data-gallery="gul-gang" data-title="Gul gang 9">
+      <a href="gul%20gang/IMG_0978.jpeg" class="glightbox" data-gallery="gul-gang" data-title="Gul gang 9: Dobbelt afbryder + to stikkontakter — indkøbes og monteres">
         <img src="gul%20gang/IMG_0978.jpeg" alt="Gul gang 9" loading="lazy">
-        <span class="label">Gul gang 9</span>
+        <span class="label"><span class="num">9</span><span class="desc">Dobbelt afbryder + to stikkontakter — indkøbes og monteres</span></span>
       </a>
-      <a href="gul%20gang/IMG_0979.jpeg" class="glightbox" data-gallery="gul-gang" data-title="Gul gang 10">
+      <a href="gul%20gang/IMG_0979.jpeg" class="glightbox" data-gallery="gul-gang" data-title="Gul gang 10: Dobbelt afbryder + to stikkontakter — indkøbes og monteres">
         <img src="gul%20gang/IMG_0979.jpeg" alt="Gul gang 10" loading="lazy">
-        <span class="label">Gul gang 10</span>
+        <span class="label"><span class="num">10</span><span class="desc">Dobbelt afbryder + to stikkontakter — indkøbes og monteres</span></span>
       </a>
-      <a href="gul%20gang/IMG_0980.jpeg" class="glightbox" data-gallery="gul-gang" data-title="Gul gang 11">
+      <a href="gul%20gang/IMG_0980.jpeg" class="glightbox" data-gallery="gul-gang" data-title="Gul gang 11: To afbrydere + stikkontakt indkøbes og monteres">
         <img src="gul%20gang/IMG_0980.jpeg" alt="Gul gang 11" loading="lazy">
-        <span class="label">Gul gang 11</span>
+        <span class="label"><span class="num">11</span><span class="desc">To afbrydere + stikkontakt indkøbes og monteres</span></span>
       </a>
-      <a href="gul%20gang/IMG_0981.jpeg" class="glightbox" data-gallery="gul-gang" data-title="Gul gang 12">
+      <a href="gul%20gang/IMG_0981.jpeg" class="glightbox" data-gallery="gul-gang" data-title="Gul gang 12: Dobbeltafbryder + enkelt afbryder + stikkontakt indkøbes og monteres">
         <img src="gul%20gang/IMG_0981.jpeg" alt="Gul gang 12" loading="lazy">
-        <span class="label">Gul gang 12</span>
+        <span class="label"><span class="num">12</span><span class="desc">Dobbeltafbryder + enkelt afbryder + stikkontakt indkøbes og monteres</span></span>
       </a>
-      <a href="gul%20gang/IMG_0982.jpeg" class="glightbox" data-gallery="gul-gang" data-title="Gul gang 13">
+      <a href="gul%20gang/IMG_0982.jpeg" class="glightbox" data-gallery="gul-gang" data-title="Gul gang 13: To afbrydere + stikkontakt indkøbes og monteres">
         <img src="gul%20gang/IMG_0982.jpeg" alt="Gul gang 13" loading="lazy">
-        <span class="label">Gul gang 13</span>
+        <span class="label"><span class="num">13</span><span class="desc">To afbrydere + stikkontakt indkøbes og monteres</span></span>
       </a>
-      <a href="gul%20gang/IMG_0983.jpeg" class="glightbox" data-gallery="gul-gang" data-title="Gul gang 14">
+      <a href="gul%20gang/IMG_0983.jpeg" class="glightbox" data-gallery="gul-gang" data-title="Gul gang 14: Dobbelt afbryder + to stikkontakter — indkøbes og monteres">
         <img src="gul%20gang/IMG_0983.jpeg" alt="Gul gang 14" loading="lazy">
-        <span class="label">Gul gang 14</span>
+        <span class="label"><span class="num">14</span><span class="desc">Dobbelt afbryder + to stikkontakter — indkøbes og monteres</span></span>
       </a>
-      <a href="gul%20gang/IMG_0984.jpeg" class="glightbox" data-gallery="gul-gang" data-title="Gul gang 15">
+      <a href="gul%20gang/IMG_0984.jpeg" class="glightbox" data-gallery="gul-gang" data-title="Gul gang 15: Dobbelt afbryder + to stikkontakter — indkøbes og monteres">
         <img src="gul%20gang/IMG_0984.jpeg" alt="Gul gang 15" loading="lazy">
-        <span class="label">Gul gang 15</span>
+        <span class="label"><span class="num">15</span><span class="desc">Dobbelt afbryder + to stikkontakter — indkøbes og monteres</span></span>
       </a>
-      <a href="gul%20gang/IMG_0985.jpeg" class="glightbox" data-gallery="gul-gang" data-title="Gul gang 16">
+      <a href="gul%20gang/IMG_0985.jpeg" class="glightbox" data-gallery="gul-gang" data-title="Gul gang 16: Dæksel indkøbes med hul — ti stk. i alt, 2 på hvert værelse">
         <img src="gul%20gang/IMG_0985.jpeg" alt="Gul gang 16" loading="lazy">
-        <span class="label">Gul gang 16</span>
+        <span class="label"><span class="num">16</span><span class="desc">Dæksel indkøbes med hul — 10 stk., 2 pr. værelse</span></span>
       </a>
-      <a href="gul%20gang/IMG_0986.jpeg" class="glightbox" data-gallery="gul-gang" data-title="Gul gang 17">
+      <a href="gul%20gang/IMG_0986.jpeg" class="glightbox" data-gallery="gul-gang" data-title="Gul gang 17: Afbryder indkøbes og monteres">
         <img src="gul%20gang/IMG_0986.jpeg" alt="Gul gang 17" loading="lazy">
-        <span class="label">Gul gang 17</span>
+        <span class="label"><span class="num">17</span><span class="desc">Afbryder indkøbes og monteres</span></span>
       </a>
-      <a href="gul%20gang/IMG_0987.jpeg" class="glightbox" data-gallery="gul-gang" data-title="Gul gang 18">
+      <a href="gul%20gang/IMG_0987.jpeg" class="glightbox" data-gallery="gul-gang" data-title="Gul gang 18: Dobbeltafbryder + enkelt afbryder + stikkontakt indkøbes og monteres">
         <img src="gul%20gang/IMG_0987.jpeg" alt="Gul gang 18" loading="lazy">
-        <span class="label">Gul gang 18</span>
+        <span class="label"><span class="num">18</span><span class="desc">Dobbeltafbryder + enkelt afbryder + stikkontakt indkøbes og monteres</span></span>
       </a>
-      <a href="gul%20gang/IMG_0988.jpeg" class="glightbox" data-gallery="gul-gang" data-title="Gul gang 19">
+      <a href="gul%20gang/IMG_0988.jpeg" class="glightbox" data-gallery="gul-gang" data-title="Gul gang 19: To afbrydere + stikkontakt indkøbes og monteres">
         <img src="gul%20gang/IMG_0988.jpeg" alt="Gul gang 19" loading="lazy">
-        <span class="label">Gul gang 19</span>
+        <span class="label"><span class="num">19</span><span class="desc">To afbrydere + stikkontakt indkøbes og monteres</span></span>
       </a>
-      <a href="gul%20gang/IMG_0989.jpeg" class="glightbox" data-gallery="gul-gang" data-title="Gul gang 20">
+      <a href="gul%20gang/IMG_0989.jpeg" class="glightbox" data-gallery="gul-gang" data-title="Gul gang 20: Dæksel indkøbes med hul — ti stk. i alt, 2 på hvert værelse">
         <img src="gul%20gang/IMG_0989.jpeg" alt="Gul gang 20" loading="lazy">
-        <span class="label">Gul gang 20</span>
+        <span class="label"><span class="num">20</span><span class="desc">Dæksel indkøbes med hul — 10 stk., 2 pr. værelse</span></span>
       </a>
-      <a href="gul%20gang/IMG_0990.jpeg" class="glightbox" data-gallery="gul-gang" data-title="Gul gang 21">
+      <a href="gul%20gang/IMG_0990.jpeg" class="glightbox" data-gallery="gul-gang" data-title="Gul gang 21: Dobbelt afbryder + to stikkontakter — indkøbes og monteres">
         <img src="gul%20gang/IMG_0990.jpeg" alt="Gul gang 21" loading="lazy">
-        <span class="label">Gul gang 21</span>
+        <span class="label"><span class="num">21</span><span class="desc">Dobbelt afbryder + to stikkontakter — indkøbes og monteres</span></span>
       </a>
-      <a href="gul%20gang/IMG_0991.jpeg" class="glightbox" data-gallery="gul-gang" data-title="Gul gang 22">
+      <a href="gul%20gang/IMG_0991.jpeg" class="glightbox" data-gallery="gul-gang" data-title="Gul gang 22: Dobbelt afbryder + to stikkontakter — indkøbes og monteres">
         <img src="gul%20gang/IMG_0991.jpeg" alt="Gul gang 22" loading="lazy">
-        <span class="label">Gul gang 22</span>
+        <span class="label"><span class="num">22</span><span class="desc">Dobbelt afbryder + to stikkontakter — indkøbes og monteres</span></span>
       </a>
-      <a href="gul%20gang/IMG_0992.jpeg" class="glightbox" data-gallery="gul-gang" data-title="Gul gang 23">
+      <a href="gul%20gang/IMG_0992.jpeg" class="glightbox" data-gallery="gul-gang" data-title="Gul gang 23: Dobbeltafbryder + enkelt afbryder + stikkontakt indkøbes og monteres">
         <img src="gul%20gang/IMG_0992.jpeg" alt="Gul gang 23" loading="lazy">
-        <span class="label">Gul gang 23</span>
+        <span class="label"><span class="num">23</span><span class="desc">Dobbeltafbryder + enkelt afbryder + stikkontakt indkøbes og monteres</span></span>
       </a>
-      <a href="gul%20gang/IMG_0993.jpeg" class="glightbox" data-gallery="gul-gang" data-title="Gul gang 24">
+      <a href="gul%20gang/IMG_0993.jpeg" class="glightbox" data-gallery="gul-gang" data-title="Gul gang 24: Dobbelt afbryder + to stikkontakter — indkøbes og monteres">
         <img src="gul%20gang/IMG_0993.jpeg" alt="Gul gang 24" loading="lazy">
-        <span class="label">Gul gang 24</span>
+        <span class="label"><span class="num">24</span><span class="desc">Dobbelt afbryder + to stikkontakter — indkøbes og monteres</span></span>
       </a>
-      <a href="gul%20gang/IMG_0994.jpeg" class="glightbox" data-gallery="gul-gang" data-title="Gul gang 25">
+      <a href="gul%20gang/IMG_0994.jpeg" class="glightbox" data-gallery="gul-gang" data-title="Gul gang 25: Dobbelt afbryder + to stikkontakter — indkøbes og monteres">
         <img src="gul%20gang/IMG_0994.jpeg" alt="Gul gang 25" loading="lazy">
-        <span class="label">Gul gang 25</span>
+        <span class="label"><span class="num">25</span><span class="desc">Dobbelt afbryder + to stikkontakter — indkøbes og monteres</span></span>
       </a>
-      <a href="gul%20gang/IMG_0995.jpeg" class="glightbox" data-gallery="gul-gang" data-title="Gul gang 26">
+      <a href="gul%20gang/IMG_0995.jpeg" class="glightbox" data-gallery="gul-gang" data-title="Gul gang 26: Dobbeltafbryder + enkelt afbryder + stikkontakt indkøbes og monteres">
         <img src="gul%20gang/IMG_0995.jpeg" alt="Gul gang 26" loading="lazy">
-        <span class="label">Gul gang 26</span>
+        <span class="label"><span class="num">26</span><span class="desc">Dobbeltafbryder + enkelt afbryder + stikkontakt indkøbes og monteres</span></span>
       </a>
-      <a href="gul%20gang/IMG_0996.jpeg" class="glightbox" data-gallery="gul-gang" data-title="Gul gang 27">
+      <a href="gul%20gang/IMG_0996.jpeg" class="glightbox" data-gallery="gul-gang" data-title="Gul gang 27: Dæksel indkøbes med hul — ti stk. i alt, 2 på hvert værelse">
         <img src="gul%20gang/IMG_0996.jpeg" alt="Gul gang 27" loading="lazy">
-        <span class="label">Gul gang 27</span>
+        <span class="label"><span class="num">27</span><span class="desc">Dæksel indkøbes med hul — 10 stk., 2 pr. værelse</span></span>
       </a>
     </div>
   </section>
@@ -451,7 +465,7 @@
     <div class="gallery">
       <a href="lager/IMG_0998.jpeg" class="glightbox" data-gallery="lager" data-title="Lager 1">
         <img src="lager/IMG_0998.jpeg" alt="Lager 1" loading="lazy">
-        <span class="label">Lager 1</span>
+        <span class="label"><span class="num">1</span></span>
       </a>
     </div>
   </section>
